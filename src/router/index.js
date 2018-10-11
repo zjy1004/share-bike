@@ -5,7 +5,6 @@ import Admin from '../views/admin'
 import NotMatch from '../views/notmatch'
 import SecondPage from '../views/secondPage'
 
-
 class Router extends Component {
     constructor(props) {
         super(props)
