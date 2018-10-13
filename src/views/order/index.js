@@ -86,6 +86,18 @@ class Order extends Component {
             }
         })
     };
+    //跳转到订单详情
+    handleDetail = () => {
+        let item = this.state.selectedItem;
+        if (item) {
+            window.open(`/#/common/order/details/${item[0].id}`, '_blank')
+        } else {
+            Modal.info({
+                title: '提示',
+                content: '请选择一个订单'
+            })
+        }
+    };
 
 render() {
     const cityData = [
@@ -238,7 +250,7 @@ render() {
                 </div>
             </Card>
             <Card style={{marginTop: '-1px'}}>
-                <Button type="primary" className="mgr20">订单详情</Button>
+                <Button type="primary" className="mgr20" onClick={this.handleDetail}>订单详情</Button>
                 <Button onClick={this.handleDone}>结束订单</Button>
             </Card>
             <Card>

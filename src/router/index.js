@@ -7,6 +7,7 @@ import SecondPage from '../views/secondPage'
 import Order from "../views/order";
 import Bar from "../views/echarts/bar";
 import Pie from "../views/echarts/pie";
+import OrderDetails from '../views/order/details'
 
 class Router extends Component {
 
@@ -15,6 +16,7 @@ class Router extends Component {
             <HashRouter>
                 <div>
                     <Switch>
+                        <Route path='/common/order/details/:detailid' component={OrderDetails}></Route>
                         <Route path='/admin' render={() =>
                            <Admin>
                                <Switch>
