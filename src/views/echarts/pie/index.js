@@ -82,7 +82,7 @@ import ReactEcharts from 'echarts-for-react'
                  {
                      name: '骑行订单',
                      type: 'pie',
-                     radius : ['60%', '70%'],
+                     radius : ['55%', '75%'],
                      center: ['50%', '60%'],
                      data:[
                          {value:335, name:'周一'},
